@@ -103,16 +103,8 @@ def main():
                 r = scaledlength
                 b= 255 - scaledlength
                 gre = 125
-                text = font.render(str(g[1]), True, (r, gre, b))
+                text = font.render(str(int(length)), True, (r, gre, b))
                 midpoint = (startingpos + endingpos) / 2
-
-
-        
-                    
-
-                
-       
-                
         
                 gamescreen.blit(text,midpoint)
                 pygame.draw.line(gamescreen, (r, gre, b), startingpos, endingpos)
